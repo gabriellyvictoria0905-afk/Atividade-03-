@@ -1,0 +1,25 @@
+quando bandeira verde for clicado
+apague todos os itens de [pedido v]
+defina [total_compra] para [0]
+defina [escolha] para [-1]
+
+repita até que <(escolha) = [0]>
+    pergunte [Cardapio: 1-X-Salada (20) | 2-Batata Frita (10) | 3-Suco (5) | 0-Encerrar] e espere
+    defina [escolha] para (resposta)
+    se <(escolha) = [1]> então
+        adicione [X-Salada] a [pedido v]
+        mude [total_compra] por (20)
+    senão
+        se <(escolha) = [2]> então
+            adicione [Batata Frita] a [pedido v]
+            mude [total_compra] por (10)
+        senão
+            se <(escolha) = [3]> então
+                adicione [Suco] a [pedido v]
+                mude [total_compra] por (5)
+            fim
+        fim
+    fim
+fim
+
+diga (junte [Compra concluida! Total a pagar: R$ ] (total_compra)) por 5 segundos

@@ -1,0 +1,9 @@
+quando bandeira verde for clicado
+vá para x: (-200) y: (0)
+defina [total_entregas] para [0]
+repita (4) vezes
+    deslize por (1) segs para x: ((posição x) + (100)) y: (0)
+    pergunte [Local alcançado! Deseja confirmar a entrega (S/N)?] e espere
+    mude [total_entregas] por (1)
+fim
+diga (junte [Percurso concluído! Número de entregas: ] (total_entregas)) por 4 segundos

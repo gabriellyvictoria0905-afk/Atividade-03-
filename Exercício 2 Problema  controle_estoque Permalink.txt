@@ -1,0 +1,10 @@
+quando bandeira verde for clicado
+defina [total_estoque] para [50]
+pergunte [Qual a quantidade de produtos que deseja retirar?] e espere
+defina [quantidade_retirada] para (resposta)
+se <(quantidade_retirada) <= (total_estoque)> então
+    mude [total_estoque] por ((quantidade_retirada) * (-1))
+    diga (junte [Retirada autorizada! Quantidade disponível: ] (total_estoque)) por 3 segundos
+senão
+    diga [Produtos insuficientes! Retirada cancelada.] por 3 segundos
+fim

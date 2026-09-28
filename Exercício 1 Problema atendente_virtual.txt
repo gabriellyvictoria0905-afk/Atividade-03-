@@ -1,0 +1,6 @@
+quando bandeira verde for clicado
+mude o idioma para [Português (Brasil)]
+pergunte [Como você se chama?] e espere
+defina [cliente_nome] para (resposta)
+diga (junte [Oi, ] (junte (cliente_nome) [! Seja bem-vindo ao nosso atendimento!])) por 3 segundos
+fale (junte [Oi, ] (junte (cliente_nome) [! Seja bem-vindo ao nosso atendimento!]))
